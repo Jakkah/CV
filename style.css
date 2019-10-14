@@ -1,3 +1,6 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
 .header{
     display: block;
     width: 100%;
@@ -13,6 +16,7 @@
     position: relative;
     filter: blur(2px);
     -webkit-filter: blur(2px);
+    z-index: 2;
 }
 nav{ 
     display: inline-flex;
@@ -23,15 +27,17 @@ nav{
     background-color: white; 
     height: 50px;
     opacity: 0.8;
-    z-index: 3;
+    z-index: 4;
 }
 body{
     background-color: #EDEFF5;
     margin: 0;
 }
 .body{
-    margin-left: 15%;
-    margin-right: 15%;
+    display: inline-flex;
+    flex-flow: wrap column;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 h1{
   background-color: rgba(0,0,0,0.8);
@@ -39,10 +45,27 @@ h1{
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 33%;
+  top: 25%;
   left: 33%;
   width: 30%;
   padding: 20px;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
+}
+#info{
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 40px;
+}
+.barre{
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40px;
+    height: 7px;
+    background: red;
+}
+p{
+    padding-left: 30%; 
 }
