@@ -94,13 +94,19 @@ h1{
     align-items: center;
     justify-content: center;
     width: 3%;
-    background-color: green;
 }
 .prev, .next{
     display: inline-flex;
     align-self: center;
     flex-basis: 70%;
     justify-content: center;
-    background-color: yellow;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(175, 171, 171, 0.829);
 }
 
