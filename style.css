@@ -1,6 +1,7 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
+
 .header{
     display: block;
     width: 100%;
@@ -26,7 +27,6 @@ nav{
     width: 100%;
     background-color: white; 
     height: 50px;
-    opacity: 0.8;
     z-index: 4;
 }
 body{
@@ -52,20 +52,55 @@ h1{
   text-align: center;
   z-index: 3;
 }
-#info{
+#info, h2{
     display: block;
     width: 100%;
     padding-top: 50px;
     font-size: 40px;
+    margin-bottom: 10px;
 }
 .barre{
     display: inline-flex;
     align-items: flex-start;
     justify-content: center;
-    width: 40px;
+    width: 50px;
     height: 7px;
     background: red;
 }
-p{
-    padding-left: 30%; 
+.apropos{
+    display: inline-flex;
+    flex-basis: 100%;
 }
+.presentation{
+    display: inline-flex;
+    flex-basis: 80%;
+    flex-flow: wrap column;
+    padding-left: 20%;
+}
+.education{
+    display: inline-flex;
+    flex-basis: 100%;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+#bac, #licence, #pro{
+    display: inline-flex;
+    width: 30%;
+    flex-flow: wrap column;
+    text-align: center;
+}
+.slide_container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3%;
+    background-color: green;
+}
+.prev, .next{
+    display: inline-flex;
+    align-self: center;
+    flex-basis: 70%;
+    justify-content: center;
+    background-color: yellow;
+}
+

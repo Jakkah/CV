@@ -3,7 +3,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <title>Salhi Yassir</title>
+        <script type="text/javascript" src="script.js"></script>        <title>Salhi Yassir</title>
     </head>
     <body>
         <div class="header">
@@ -13,27 +13,49 @@
                 <a href="#education">Education </a>
                 <a href="#experience">Expériences </a>
                 <a href="#competence">Compétences </a>
+                <a href="#contact">Contact</a>
             </nav>
             <div class="back_img"></div>
             <h1>SALHI YASSIR</br>Développeur Web</h1>
         </div>
         <div class="body">
             <h2 id="info">A propos</h2>
+            <div class="apropos">
                 <div class="barre"></div>
-                <p> 
-                    Actuellement en formation dans le développement web/mobile.</br>
-                    Titulaire d’un bac scientifique, j’ai poursuivi mes études au sein d’une université des sciences dans le cadre d’une Licence informatique.</br> Curieux de nature et ayant des affinités avec l’informatique, je me suis essayé à plusieurs activités différentes dans le domaine du numérique.
-                </p>
-                <p>
-                    De la programmation Web (HTML/CSS) à la modélisation 3D avec Blender en passant par du développement orienté objet (C++).</br> J’ai pu développer une adaptabilité qui me permettra je suis sûr de m’intégrer parfaitement au sein de n'importe qu'elle équipe.
-                </p>
+                <div class="presentation">
+                    <p> 
+                        Actuellement en formation dans le développement web/mobile.</br>
+                    </p>
+                    <p>
+                        Titulaire d’un bac scientifique, j’ai poursuivi mes études au sein d’une université des sciences dans le cadre d’une Licence informatique.</br> Curieux de nature et ayant des affinités avec l’informatique, je me suis essayé à plusieurs activités différentes dans le domaine du numérique.
+                    </p>
+                    <p>
+                        De la programmation Web (HTML/CSS) à la modélisation 3D avec Blender en passant par du développement orienté objet (C++).</br> J’ai pu développer une adaptabilité qui me permettra je suis sûr de m’intégrer parfaitement au sein de n'importe qu'elle équipe.
+                    </p>
+                </div>
+            </div>        
             <h2 id="education">Education</h2>
+            <div class="barre"></div>
             <div class="education">
-                BAC SCIENTIFIQUE - 2014/2015
-                NIVEAU LICENCE 1 - INFORMATIQUE       
-                Projet Pro Numérique - Juin/Novembre 2019
+                <div class="slide_container">
+                <a class="prev" onclick="slide(left)">&#10094;</a></div>
+                <div id="bac">
+                    <p class="diplome">BAC SCIENTIFIQUE</br><span class="date">2014-2015</span></p>
+                    <p class="description">Obtention de mon baccalauréat scientifique spécialité ISN, Lycée Jules Files </br> Carcassonne.</p>
+                </div>
+                <div id="licence"> 
+                    <p class="diplome">NIVEAU LICENCE 1 INFORMATIQUE</br><span class="date">2015-2016</span></p>
+                    <p class="description">Validation des modules d'informatiques, Faculté des Sciences </br> Montpellier.  </p>
+                </div>   
+                <div id="pro">
+                    <p class="diplome">PROJET PRO NUMERIQUE</br><span class="date">06/19-11/19</span></p>
+                    <p class="description">Acquisition des compétences de communication, ainsi que des bases du développement web.</br> F.A.D
+                </div>
+                <div class="slide_container">
+                <a class="next" onclick="slide(right)">&#10095;</a></div>
             </div>
             <h2 id="experience">Expériences</h2>
+            <div class="barre"></div>
             <div class="exp">
                 <div id="exp1">
                     <h3> CRÉATION D'UN SITE</h3>
@@ -49,6 +71,7 @@
                 </div>
             </div>
             <h2 id="competence">Compétences</h2>
+            <div class="barre"></div>
             <div class="compt">
                 <div id="compt1">
                     HTML
