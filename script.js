@@ -45,3 +45,18 @@ window.onclick = function(event) {
     contact.style.display = "none";
   }
 }
+
+// Header flipper.
+
+var flag = 2;
+function flip() {
+  if (flag%2 === 0) {
+    document.getElementById("flip").innerHTML = "<div>Je ne perds jamais.</br> Soit je gagne, Soit j'apprends.</div><span> Nelson Mandela</span>";
+    flag++;
+  }
+  else{
+    document.getElementById("flip").innerHTML = "SALHI YASSIR</br>Développeur Web"
+    flag++;
+  }
+  
+}
