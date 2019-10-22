@@ -3,17 +3,17 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="script.js"></script>        <title>Salhi Yassir</title>
+       <title>Salhi Yassir</title>
     </head>
     <body>
         <div class="header">
             <nav class="menu">
                 <a href="#top">Accueil </a>
                 <a href="#info">A propos </a>
-                <a href="#education">Education </a>
-                <a href="#experience">Expériences </a>
+                <a href="#slides" onclick="currentSlide(1)" >Education </a>
+                <a href="#slides" onclick="currentSlide(2)">Expériences </a>
                 <a href="#competence">Compétences </a>
-                <a href="#contact">Contact</a>
+                <a id="contact">Contact</a>
             </nav>
             <div class="back_img"></div>
             <h1>SALHI YASSIR</br>Développeur Web</h1>
@@ -34,45 +34,57 @@
                     </p>
                 </div>
             </div>        
-            <h2 id="education">Education</h2>
-            <div class="barre"></div>
-            <div class="education">
+            <div class="slides" id="slides">
+                <div class="head_slider">
+                    <h2 id="education">Education</h2>
+                    <div class="barre"></div>
+                </div>
                 <div class="slide_container">
-                <a class="prev" onclick="slide(left)">&#10094;</a></div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
                 <div id="bac">
                     <p class="diplome">BAC SCIENTIFIQUE</br><span class="date">2014-2015</span></p>
-                    <p class="description">Obtention de mon baccalauréat scientifique spécialité ISN, Lycée Jules Files </br> Carcassonne.</p>
+                    <p class="description">Obtention de mon baccalauréat scientifique spécialité ISN, Lycée Jules Files, Carcassonne.</p>
                 </div>
                 <div id="licence"> 
                     <p class="diplome">NIVEAU LICENCE 1 INFORMATIQUE</br><span class="date">2015-2016</span></p>
-                    <p class="description">Validation des modules d'informatiques, Faculté des Sciences </br> Montpellier.  </p>
+                    <p class="description">Validation des modules d'informatiques, Faculté des Sciences Montpellier.  </p>
                 </div>   
                 <div id="pro">
                     <p class="diplome">PROJET PRO NUMERIQUE</br><span class="date">06/19-11/19</span></p>
-                    <p class="description">Acquisition des compétences de communication, ainsi que des bases du développement web.</br> F.A.D
+                    <p class="description">Acquisition des compétences de communication, ainsi que des bases du développement web. F.A.D
                 </div>
                 <div class="slide_container">
-                    <a class="next" onclick="slide(right)">&#10095;</a>
-                </div>
+                    <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+                </div>   
             </div>
-            <h2 id="experience">Expériences</h2>
-            <div class="barre"></div>
-            <div class="exp">
-                <div id="exp1">
-                    <h3> CRÉATION D'UN SITE</h3>
-                    HTML/CSS (UE LICENCE 1) - 2015-2016
+            <div class="slides">
+                <div class="head_slider">
+                    <h2 id="experience">Expériences</h2>
+                    <div class="barre"></div>
                 </div>
-                <div id="exp2">
-                    <h3> CASSE-BRIQUE </h3>      
-                    LUA(LOVE2D) - 2018-2019
+                <div class="slide_container">
+                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 </div>
-                <div id="exp3">    
-                    <h3> STAGE OPTRAGROUP </h3>  
-                    AGENCE DE COMMUNICATION - AOUT-2019
-                </div>
+                <div id="bac">
+                    <p class="diplome">CREATION D'UN SITE</br><span class="date">2018-2019</span></p>
+                    <p class="description">Création d'un site internet durant mon année en Licence 1.</p>
+                     </div>
+                     <div id="licence"> 
+                         <p class="diplome">CASSE BRIQUE</br><span class="date">2018-2019</span></p>
+                         <p class="description">Lua(LOVE2D) </p>
+                     </div>   
+                     <div id="pro">
+                         <p class="diplome">STAGE OPTRAGROUP</br><span class="date">AOUT-2019</span></p>
+                         <p class="description">Agence de Communication</p>
+                     </div>
+                     <div class="slide_container">
+                         <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+                     </div>   
+                 </div>
+            <div class="head_compt">
+                <h2 id="competence">Compétences</h2>
+                <div class="barre"></div>
             </div>
-            <h2 id="competence">Compétences</h2>
-            <div class="barre"></div>
             <div class="compt">
                 <div id="compt1">
                     HTML
@@ -84,19 +96,49 @@
                     JavaScript
                 </div>
                 <div id="compt4">
-                    WordPress
+                    Pack Office
                 </div>
                 <div id="compt5">
-                    Word Office
+                    WordPress
                 </div>
                 <div id="compt6">
-                    Visual studio Code
+                    Anglais B2+
                 </div>
                 <div id="compt7">
-                    Anglais - B2+
+                    VS code
                 </div>
             </div>
         </div>
+        <div class="footer"></div>
+        <div id="myContact" class="contact">
 
+                <!-- Modal content -->
+                <div class="contact-content">
+                  <div class="contact_container">
+                    <div class="contact_info">
+                      <p>SALHI YASSIR</p>
+                      <p>1 impasse du bermenas </br> 11200 Conilhac-Corbières</p>
+                      <p>07.83.88.09.83</p>
+                      <p>yassir0905@gmail.com</p>
+                    </div>
+                    <div class="form"> 
+                      <form action="">
+                        Nom<br>
+                        <input type="text" name="firstname">
+                        <br>
+                        E-mail<br>
+                        <input type="text" name="lastname">
+                        <br>
+                        Votre Message:<br>
+                        <textarea id="message"></textarea>
+                        <input type="submit" value="Envoyer">
+                      </form>
+                    </div>
+                    <span class="close">x</span>
+                    </div>    
+                </div>
+              
+              </div> 
+        <script type="text/javascript" src="script.js"></script> 
     </body>
 </html>
