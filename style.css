@@ -215,7 +215,7 @@ h2{
     left: -230px;
     z-index: 6;
 }
-a:hover{
+nav>a:hover{
     background-color: rgba(175, 171, 171, 0.829);
     display: inline-flex;
     align-self: center;
@@ -231,35 +231,24 @@ a{
   text-decoration: none;
   display: inline-block;
 }
-.footer{
-    height: 250px;
-    background-color: #5D769D;
-    margin-top: 7%;
-}
 .contact {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed; 
+    z-index: 100; 
+    padding-top: 100px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .contact-content {
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+}
+.contact-content {
     background-color: #5D769D;
     margin: auto;
     border: 1px solid #888;
     width: 70%;
     padding-bottom: 10px;
   }
-  
-  /* The Close Button */
   .close {
     display: inline-flex;
     justify-content: flex-end;
@@ -290,12 +279,12 @@ a{
     resize: none;
   }
   .contact_info{
-      display: inline-flex;
-      text-align: center;
-      justify-content: flex-start;
-      align-self: center;
-      flex-flow: wrap column;
-      width: 50%;
+    display: inline-flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-self: center;
+    flex-flow: wrap column;
+    width: 50%;
   }
   input[type=submit] {
     background-color: white;
@@ -329,6 +318,52 @@ a{
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
-
+}
+.footer{
+    display: inline-flex;
+    height: 250px;
+    background-color: #5D769D;
+    margin-top: 7%;
+    width: 100%;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+    align-content: center;
+}
+#pdf{
+    border: 3px solid #f1f1f1;
+    text-align: center;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.icons{
+    width: 30%;
+    justify-content: center;
+}
+i{
+    cursor: pointer;
+    font-size:50px;
+    color:#ccc;
+    flex-basis: 50%;
+}
+.footer>a:hover:not(#mentions){
+    background-color: rgba(175, 171, 171, 0.829);
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+}
+#mentions{
+    width: 10%;
+    align-self: center;
+    height: 10px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: flex-end;
+}
+#mentions:hover{
+    font-size: 15px;
 }
 
