@@ -19,27 +19,27 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
-// Modal javascript
+// Modal de contact.
 
 var contact = document.getElementById("myContact");
 
-// Get the button that opens the modal
+// récupération du bouton qui ouvre le modal.
 var btn = document.getElementById("contact");
 
-// Get the <span> element that closes the modal
+// Récupération de l'élément close position[0].
 var close = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// Fonction : Ouverture du modal sur click.
 btn.onclick = function() {
   contact.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
+// Fermeture du modal après click sur (X).
 close.onclick = function() {
   contact.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Fermeture du modal après un click en-dehors.
 window.onclick = function(event) {
   if (event.target == contact) {
     contact.style.display = "none";
@@ -58,5 +58,4 @@ function flip() {
     document.getElementById("flip").innerHTML = "SALHI YASSIR</br>Développeur Web"
     flag++;
   }
-  
 }

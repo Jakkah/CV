@@ -110,7 +110,7 @@ h2{
 .prev, .next{
     display: inline-flex;
     align-self: center;
-    flex-basis: 50%;
+    flex-basis: 5%;
     justify-content: center;
     cursor: pointer;
     font-weight: bold;
